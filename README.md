@@ -29,3 +29,62 @@ The **Online Complaint Portal** is a web-based application designed to allow use
    ```bash
    git clone https://github.com/<your-username>/online-complaint-portal.git
    cd online-complaint-portal
+Backend Setup
+
+bash
+Copy code
+cd backend
+npm install
+npm start
+Frontend Setup
+
+bash
+Copy code
+cd frontend
+npm install
+npm start
+Database
+
+Create a MySQL database named complaint_portal.
+
+Import the provided database.sql file (if available) to set up tables.
+
+Environment Variables
+
+Create a .env file in the backend folder:
+
+ini
+Copy code
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=yourpassword
+DB_NAME=complaint_portal
+DB_PORT=3306
+Usage
+Open the frontend in your browser at http://localhost:3000.
+
+Register as a new user or login.
+
+Submit complaints and track their status.
+
+Admins can login to view and manage all complaints.
+
+Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the repository.
+
+Create a new branch: git checkout -b feature-name
+
+Make your changes and commit: git commit -m "Add new feature"
+
+Push to the branch: git push origin feature-name
+
+Create a Pull Request.
+
+License
+This project is licensed under the MIT License.
+
+Author
+E. Rajesh Goud
+Email: rediga2@gitam.in
