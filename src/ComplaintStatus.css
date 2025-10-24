@@ -1,0 +1,125 @@
+/* === Center the Whole Page === */
+.status-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+/* === Progress Bar / Stepper === */
+.progress-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 30px 0;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.progress-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  font-weight: bold;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
+}
+
+.progress-circle.active {
+  border-color: #007bff;
+  background: #007bff;
+  color: white;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.progress-label {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #999;
+}
+
+.active-label {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Connecting Line Between Steps */
+.progress-line {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 100%;
+  height: 3px;
+  background: #ccc;
+  z-index: 1;
+}
+
+.progress-line.active-line {
+  background: #007bff;
+}
+
+/* === Card and Button Styling === */
+.status-card {
+  background: #f9f9f9;
+  padding: 16px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.updates-section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.updates-section h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.updates-section li {
+  background: #f1f1f1;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.back-btn {
+  margin-top: 20px;
+  padding: 10px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+  background: #0056b3;
+}
