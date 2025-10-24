@@ -1,0 +1,23 @@
+.navbar{
+  display:flex;
+  justify-content: center;
+  color:#00897b;
+
+  .container{
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+  }
+  .logo{
+      font-size: 28px;
+      font-weight: bold;
+  }
+  .links{
+    display:flex;
+    align-items: center;
+    gap:24px;
+    font-weight: 500;
+
+  }
+}
